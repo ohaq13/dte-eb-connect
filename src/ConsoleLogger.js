@@ -7,7 +7,7 @@ class ConsoleLogger {
 
   static getColorFn(methodName) {
     return LogColors[methodName].bgColor ?
-      chalk[LogColors[methodName].color][Colors[methodName].bgColor] :
+      chalk[LogColors[methodName].color][LogColors[methodName].bgColor] :
       chalk[LogColors[methodName].color]
   }
 
